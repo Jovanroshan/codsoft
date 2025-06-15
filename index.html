@@ -3,36 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Calculator</title>
+  <title>Jovan Roshan | BioTech Student Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" disabled />
-    <div class="buttons">
-      <button onclick="append('7')">7</button>
-      <button onclick="append('8')">8</button>
-      <button onclick="append('9')">9</button>
-      <button class="operator" onclick="append('/')">/</button>
+  <div class="container">
+    <nav>
+      <div class="nav-logo">
+        <span>&#129302;</span>
+        <p class="nav-name">Jovan Roshan</p>
+      </div>
+      <div class="nav-menu">
+        <ul class="nav_menu_list">
+          <li class="nav_list"><a href="#home" class="nav-link active-link">Home</a></li>
+          <li class="nav_list"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav_list"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav_list"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav_list"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-menu-btn"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
 
-      <button onclick="append('4')">4</button>
-      <button onclick="append('5')">5</button>
-      <button onclick="append('6')">6</button>
-      <button class="operator" onclick="append('*')">*</button>
+    <section class="wrapper" id="home">
+      <div class="featured-box">
+        <div class="featured-text">
+          <div class="featured-text-card"><span>BioTech Enthusiast</span></div>
+          <div class="featured-name">
+            Hi, I'm <span class="typedText">Jovan Roshan</span>
+          </div>
+          <div class="featured-text-info">
+            Passionate Biotechnology student exploring innovations in genetic engineering, pharmaceuticals, and bioinformatics.
+          </div>
+          <div class="featured-text-btn">
+            <a href="#contact" class="btn blue-btn">Contact Me</a>
+            <a href="mailto:jovanroshan70@gmail.com" class="btn">Email Me <i class="fas fa-paper-plane"></i></a>
+          </div>
+          <div class="social_icons">
+            <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="icon"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="C:\Users\G3\OneDrive\Desktop\portfolio\business-man-wearing-neat-suit-smiled_976142-1216.jpg" alt="Profile Photo" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <button onclick="append('1')">1</button>
-      <button onclick="append('2')">2</button>
-      <button onclick="append('3')">3</button>
-      <button class="operator" onclick="append('-')">-</button>
+    <section class="section" id="about">
+      <div class="top-header">
+        <h1>About Me</h1>
+        <span>Let me introduce myself</span>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="about-info">
+            <p>
+              I'm a Biotechnology undergraduate with a passion for molecular biology, data analysis, and research. I strive to bridge the gap between biology and technology.
+            </p>
+            <div class="about-btn">
+              <button class="btn">Download CV <i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <button onclick="append('0')">0</button>
-      <button onclick="append('.')">.</button>
-      <button onclick="calculate()">=</button>
-      <button class="operator" onclick="append('+')">+</button>
+    <section class="section" id="skills">
+      <div class="top-header">
+        <h1>Skills</h1>
+        <span>Key skills in biotechnology and technology</span>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="skills-box">
+            <div class="skills-header">
+              <h3>Biotechnology</h3>
+            </div>
+            <div class="skills-list">
+              <span>Genetic Engineering</span>
+              <span>Molecular Biology</span>
+              <span>Microbiology</span>
+              <span>Bioprocess Technology</span>
+              <span>Immunology</span>
+              <span>Biochemistry</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="skills-box">
+            <div class="skills-header">
+              <h3>Technology</h3>
+            </div>
+            <div class="skills-list">
+              <span>Python</span>
+              <span>Bioinformatics Tools</span>
+              <span>MS Excel</span>
+              <span>Data Analysis</span>
+              <span>Power BI</span>
+              <span>R Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <button onclick="clearDisplay()" class="clear">Clear</button>
-    </div>
+    <section class="section" id="projects">
+      <div class="top-header">
+        <h1>Projects</h1>
+        <span>Some academic and personal projects</span>
+      </div>
+      <div class="project-container">
+        <div class="project-box">
+          <i class="fas fa-dna"></i>
+          <h3>Gene Cloning Simulation</h3>
+          <label>Simulated DNA ligation using SnapGene</label>
+        </div>
+        <div class="project-box">
+          <i class="fas fa-microscope"></i>
+          <h3>Microbial Analysis</h3>
+          <label>Studied antibacterial resistance of E. coli strains</label>
+        </div>
+        <div class="project-box">
+          <i class="fas fa-chart-bar"></i>
+          <h3>Data Visualization</h3>
+          <label>Biostatistics project using Excel & Power BI</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="top-header">
+        <h1>Contact Me</h1>
+        <span>Let's connect and collaborate</span>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p><i class="fas fa-envelope"></i> jovanroshan70@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> India</p>
+          </div>
+        </div>
+        <div class="col">
+          <form class="form-control">
+            <div class="form-inputs">
+              <input type="text" class="input-field" placeholder="Name" />
+              <input type="email" class="input-field" placeholder="Email" />
+            </div>
+            <textarea placeholder="Your Message"></textarea>
+            <div class="form-button">
+              <button class="btn">Send <i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="top-footer"><p>Jovan Roshan</p></div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list"><a href="#">Home</a></li>
+          <li class="footer_menu_list"><a href="#about">About</a></li>
+          <li class="footer_menu_list"><a href="#skills">Skills</a></li>
+          <li class="footer_menu_list"><a href="#projects">Projects</a></li>
+          <li class="footer_menu_list"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="bottom-footer">
+        <p>&copy; 2025 Jovan Roshan. All rights reserved.</p>
+      </div>
+    </footer>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
